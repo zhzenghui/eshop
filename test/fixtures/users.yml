@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  uid: MyString
+  nick: MyString
+  email: MyString
+  desc: MyString
+  sex: MyString
+  statue: 1
+  password: MyString
+  type: 
+  avatar: MyString
+  vip_info: MyString
+
+two:
+  user_id: 1
+  uid: MyString
+  nick: MyString
+  email: MyString
+  desc: MyString
+  sex: MyString
+  statue: 1
+  password: MyString
+  type: 
+  avatar: MyString
+  vip_info: MyString
