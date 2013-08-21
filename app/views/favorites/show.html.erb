@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Item numid:</strong>
+  <%= @favorite.item_numid %>
+</p>
+
+<p>
+  <strong>Collect type:</strong>
+  <%= @favorite.collect_type %>
+</p>
+
+<p>
+  <strong>Shared:</strong>
+  <%= @favorite.shared %>
+</p>
+
+<p>
+  <strong>Nike:</strong>
+  <%= @favorite.nike %>
+</p>
+
+<p>
+  <strong>Statues:</strong>
+  <%= @favorite.statues %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @favorite.user_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @favorite.title %>
+</p>
+
+<%= link_to 'Edit', edit_favorite_path(@favorite) %> |
+<%= link_to 'Back', favorites_path %>

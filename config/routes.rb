@@ -1,4 +1,6 @@
 Eshop::Application.routes.draw do
+  resources :favorites
+
   get "static_pages/home"
   get "static_pages/contact"
   get "static_pages/about"
