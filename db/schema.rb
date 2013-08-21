@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130821145635) do
+ActiveRecord::Schema.define(version: 20130821160216) do
+
+  create_table "_likes_old_20130822", force: true do |t|
+    t.string   "ll_id"
+    t.string   "user_id"
+    t.string   "nick"
+    t.integer  "collect_type"
+    t.integer  "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "favorites", force: true do |t|
     t.integer  "item_numid"
@@ -21,6 +31,16 @@ ActiveRecord::Schema.define(version: 20130821145635) do
     t.integer  "statues"
     t.integer  "user_id"
     t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "likes", force: true do |t|
+    t.string   "ll_id"
+    t.string   "user_id"
+    t.string   "nick"
+    t.integer  "collect_type"
+    t.integer  "status"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

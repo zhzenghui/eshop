@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ll_id: MyString
+  user_id: MyString
+  nick: MyString
+  type: 1
+  status: 1
+
+two:
+  ll_id: MyString
+  user_id: MyString
+  nick: MyString
+  type: 1
+  status: 1

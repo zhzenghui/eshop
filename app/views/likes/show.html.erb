@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ll:</strong>
+  <%= @like.ll_id %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @like.user_id %>
+</p>
+
+<p>
+  <strong>Nick:</strong>
+  <%= @like.nick %>
+</p>
+
+<p>
+  <strong>Collect_type.Type:</strong>
+  <%= @like.collect_type %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @like.status %>
+</p>
+
+<%= link_to 'Edit', edit_like_path(@like) %> |
+<%= link_to 'Back', likes_path %>
