@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130820085231) do
+ActiveRecord::Schema.define(version: 20130820094527) do
+
+  create_table "shops", force: true do |t|
+    t.integer  "sid"
+    t.integer  "cid"
+    t.string   "nick"
+    t.string   "title"
+    t.string   "desc"
+    t.string   "bulletin"
+    t.string   "pic_path"
+    t.string   "shop_score"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.integer  "user_id"
