@@ -3,7 +3,19 @@
 one:
   name: MyString
   email: MyString
+  desc: MyString
+  sex: 1
+  statue: 1
+  type: 1
+  avtar: MyString
+  info: MyString
 
 two:
   name: MyString
   email: MyString
+  desc: MyString
+  sex: 1
+  statue: 1
+  type: 1
+  avtar: MyString
+  info: MyString

@@ -3,17 +3,14 @@
 <table>
   <thead>
     <tr>
-      <th>User</th>
-      <th>Uid</th>
-      <th>Nick</th>
+      <th>Name</th>
       <th>Email</th>
       <th>Desc</th>
       <th>Sex</th>
       <th>Statue</th>
-      <th>Password</th>
       <th>Type</th>
-      <th>Avatar</th>
-      <th>Vip info</th>
+      <th>Avtar</th>
+      <th>Info</th>
       <th></th>
       <th></th>
       <th></th>
@@ -23,17 +20,14 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.user_id %></td>
-        <td><%= user.uid %></td>
-        <td><%= user.nick %></td>
+        <td><%= user.name %></td>
         <td><%= user.email %></td>
         <td><%= user.desc %></td>
         <td><%= user.sex %></td>
         <td><%= user.statue %></td>
-        <td><%= user.password %></td>
         <td><%= user.type %></td>
-        <td><%= user.avatar %></td>
-        <td><%= user.vip_info %></td>
+        <td><%= user.avtar %></td>
+        <td><%= user.info %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>

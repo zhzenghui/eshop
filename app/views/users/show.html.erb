@@ -1,18 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>User:</strong>
-  <%= @user.user_id %>
-</p>
-
-<p>
-  <strong>Uid:</strong>
-  <%= @user.uid %>
-</p>
-
-<p>
-  <strong>Nick:</strong>
-  <%= @user.nick %>
+  <strong>Name:</strong>
+  <%= @user.name %>
 </p>
 
 <p>
@@ -36,23 +26,18 @@
 </p>
 
 <p>
-  <strong>Password:</strong>
-  <%= @user.password %>
-</p>
-
-<p>
   <strong>Type:</strong>
   <%= @user.type %>
 </p>
 
 <p>
-  <strong>Avatar:</strong>
-  <%= @user.avatar %>
+  <strong>Avtar:</strong>
+  <%= @user.avtar %>
 </p>
 
 <p>
-  <strong>Vip info:</strong>
-  <%= @user.vip_info %>
+  <strong>Info:</strong>
+  <%= @user.info %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
