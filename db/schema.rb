@@ -11,17 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130821160216) do
-
-  create_table "_likes_old_20130822", force: true do |t|
-    t.string   "ll_id"
-    t.string   "user_id"
-    t.string   "nick"
-    t.integer  "collect_type"
-    t.integer  "status"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20130822074253) do
 
   create_table "favorites", force: true do |t|
     t.integer  "item_numid"
@@ -59,19 +49,11 @@ ActiveRecord::Schema.define(version: 20130821160216) do
   end
 
   create_table "users", force: true do |t|
-    t.integer  "user_id"
-    t.string   "uid"
-    t.string   "nick"
+    t.string   "name"
     t.string   "email"
-    t.string   "desc"
-    t.string   "sex"
-    t.integer  "statue"
-    t.string   "password"
-    t.string   "type"
-    t.string   "avatar"
-    t.string   "vip_info"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "password_digest"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
